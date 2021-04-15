@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        DataContext="{Binding RelativeSource={RelativeSource Self}, Mode=Default}">
+    <Grid>
+        <StackPanel>
+            <Button Margin="2" Click="ReferencedLibrariesLoadButton_Click" x:Name="ReferencedLibrariesLoadButton">Execute init from referenced libraries</Button>
+            <Button Margin="2" Click="Button_Click">Load external library and execute init</Button>
+            <Label Margin="2">Console output</Label>
+            <ScrollViewer Height="300" x:Name="OutupScrollViewer" >
+                <TextBlock Margin="2" x:Name="ConsoleOutTextBlock" Text="{Binding Path=ConsoleOutput, Mode=OneWay}"></TextBlock>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</Window>
