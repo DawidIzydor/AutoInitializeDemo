@@ -12,7 +12,9 @@ The player can play then songs in `xyz` format - application use-cases are incre
 
 TBD
 
-# What is happening in this app
+# What is happening in this demo app
+
+This app shows just the basic concept of running methods from other assemblies, an example that modifies the app behaviour might be added in the future.
 
 0. Compile and run the app
 1. Click "Execute init from referenced libraries"
